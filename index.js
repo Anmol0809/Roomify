@@ -107,7 +107,7 @@ app.use("/", userRouter);
 // });
 
 app.all("*", (req, res, next) => {
-  next(new ExpressError(404, "page Not Found"));
+  next(new ExpressError(404, "page Not Found 600"));
 });
 
 app.use((err, req, res, next) => {
